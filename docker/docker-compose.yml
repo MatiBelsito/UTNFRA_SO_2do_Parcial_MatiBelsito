@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  web:
+    image: matibelsito/web3_2do_parcial_belsito:latest
+    ports:
+      - "8081:80"
+    volumes:
+      - ./web/file:/usr/share/nginx/html/file

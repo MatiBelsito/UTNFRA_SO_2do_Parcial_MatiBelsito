@@ -60,7 +60,8 @@ sudo vgcreate vg_datos /dev/sdc2
 sudo vgcreate vg_temp /dev/sdd1 /dev/sde1
 
 # Crear LVs
-sudo lvcreate -L 10M -n lv_docker vg_datos
+#sudo lvcreate -L 10M -n lv_docker vg_datos
+sudo lvcreate -L 1G -n lv_docker vg_datos
 sudo lvcreate -L 1.5G -n lv_multimedia vg_datos
 sudo lvcreate -L 1.9G -n lv_swap vg_temp
 
