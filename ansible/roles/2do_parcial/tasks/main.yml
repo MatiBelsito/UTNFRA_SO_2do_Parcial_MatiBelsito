@@ -1,0 +1,18 @@
+- name: Crear directorio /tmp/alumno
+  file:
+    path: /tmp/alumno
+    state: directory
+    mode: '0755'
+
+- name: Crear archivo datos.txt con información del sistema
+  copy:
+    dest: /tmp/alumno/datos.txt
+    content: |
+      Nombre: Matias
+      Apellido: Belsito
+      División: 318
+      Fecha: {{ ansible_date_time.date }}
+      -------------------------
+      Distribución: {{ ansible_distribution }}
+      Cantidad de Cores: {{ ansible_processor_cores }}
+

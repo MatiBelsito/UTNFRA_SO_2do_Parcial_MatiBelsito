@@ -1,0 +1,25 @@
+- name: Crear grupo GProfesores
+  group:
+    name: GProfesores
+    state: present
+
+- name: Crear grupo GAlumnos
+  group:
+    name: GAlumnos
+    state: present
+
+- name: Crear usuario Profesor y agregar a GProfesores
+  user:
+    name: Profesor
+    groups: GProfesores
+    append: yes
+    state: present
+    create_home: yes
+
+- name: Crear usuario alumno y agregar a GAlumnos
+  user:
+    name: alumno
+    groups: GAlumnos
+    append: yes
+    state: present
+    create_home: yes

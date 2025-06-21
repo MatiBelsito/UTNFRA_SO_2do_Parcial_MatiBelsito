@@ -1,0 +1,8 @@
+- name: Ejecutar todos los roles del Punto D
+  hosts: servidor
+  become: yes
+  roles:
+    - 2do_parcial
+    - Alta_Usuarios_belsito
+    - Sudoers_belsito
+    - Instala_tools_belsito
