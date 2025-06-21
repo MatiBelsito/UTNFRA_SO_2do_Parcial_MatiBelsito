@@ -80,6 +80,7 @@ sudo mkdir -p /Multimedia
 sudo mount /dev/vg_datos/lv_docker /var/lib/docker
 sudo mount /dev/vg_datos/lv_multimedia /Multimedia
 
+
 # Activar swap
 sudo swapon /dev/sdc1
 sudo swapon /dev/vg_temp/lv_swap
@@ -103,5 +104,12 @@ fi
 if ! grep -q "lv_swap" /etc/fstab; then
     echo "/dev/mapper/vg_temp-lv_swap none swap sw 0 0" | sudo tee -a /etc/fstab
 fi
+
+
+# Reiniciar Docker para que use el nuevo almacenamiento
+echo "[*] Reiniciando Docker..."
+sudo systemctl restart docker
+
+
 
 echo "[*] Punto A completado con éxito."
