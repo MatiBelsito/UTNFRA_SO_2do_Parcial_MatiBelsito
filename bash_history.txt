@@ -1,0 +1,429 @@
+git clone http://github.com/upszot/UTN-FRA_SO_Examenes.git
+./UTN-FRA_SO_Examenes//202408/script_Precondicion.sh
+~/.bashrc  && history -a 
+sudo ~/.bashrc  && history -a 
+sudo id mb
+
+sudo id mb
+sudo usermod -aG sudo mb
+sudo su - vagrant
+ls -l /home
+sudo su - vagrant
+passwd
+exit
+id
+docker ps
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+echo "mb ALL=(ALL) NOPASSWD:ALL"
+sudo ls-l /etc//sudoers.d/vagrant
+echo "mb ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/mb
+ls -l /etc/sudoers.d/mb
+sudo ls -l /etc/sudoers.d/mb
+sudo su
+sudo su -mb
+id
+docker ps
+ansible --version
+sudo systemctl status docker
+sudo systemctl status ansible
+cat .bashrc
+history
+ls -la
+tail .bash_history
+cd RTA_Examen_20250617/
+tree
+ls Punto_A.sh 
+ls -l Punto_A.sh 
+cat Punto_A.sh 
+CD ..
+cd ..
+tree
+ls -l
+chmod 775 RTA_Examen_20250617/*
+ls -l
+CLEAR
+clear
+fdisk fdisk -l
+sudo fdisk fdisk -l
+sudo fdisk -l
+LS -L
+ls -l
+cd RTA_Examen_20250617/
+ls
+vim Punto_A.sh
+./Punto_A.sh
+sudo fdisk -l
+ls -l
+vim Punto_A.sh
+sudo fdisk -l
+sudo fdisk /dev/sdc
+sudo fdisk -l
+sudo fdisk | grep LVM
+sudo fdisk | grep lvm
+sudo fdisk -l | grep lvm
+sudo fdisk -l | grep -i lvm
+sudo pvs
+df -h
+docker ps
+vgs
+history
+fdisk -l
+sudo !
+sudo sudo !
+fdisk -l
+sudo fdisk -l
+history
+tree
+ls -ll
+cd UTN-FRA_SO_Examenes/
+ls -ll
+cd ..
+ls -ll
+cd RTA_Examen_20250617/
+ls -ll
+cat Punto_A.sh 
+fdisk -l
+sudo fdisk -l
+cd ..
+tree
+ls -l
+cd /
+ls -ll
+cd home
+ls -ll
+cd vagran
+cd vagrant/
+sudo cd vagrant/
+ls -ll
+ls RTA_Examen_20250617/
+cd RTA_Examen_20250617/
+LS -L
+ls -l
+vim script_precondiciones.sh
+cat script_precondiciones.sh 
+sudo su- vagrant
+ls -l
+cd RTA_Examen_20250617/
+vim script_precondiciones.sh
+cat script_precondiciones.sh 
+cd ..
+ls -l
+ln -s /home/vagrant/carpeta_compartida ~/carpeta_compartida
+sudo chown -R mb:mb /home/vagrant/carpeta_compartida
+ls -ll
+ls -l ~/.ssh
+sudo ls -l ~/.ssh
+sudo -l
+ssh-keygen -t ed25519 -C "cuerdashop.matias@hotmail.com"
+cat ~/.ssh/id_ed25519.pub
+git config --global user.name MatiBelsito
+git config --global user.email cuerdashop.matias64hotmail.com
+ls
+git clone git@github.com:MatiBelsito/UTNFRA_SO_2do_Parcial_MatiBelsito.git
+ls -l
+mv ~/RTA_Examen_20250617 ~/UTNFRA_SO_2do_Parcial_MatiBelsito/
+cd UTNFRA_SO_2do_Parcial_MatiBelsito/
+tree
+mv script_precondiciones.sh ../
+cd RTA_Examen_20250617/
+mv script_precondiciones.sh ../
+cd ..
+tree
+git add .
+git commit -m "primer commit, agrego los scripts de resolucion del examen (vacios)"
+git push origin main
+lsblk
+sudo swapoff -a
+sudo umount /var/lib/docker
+sudo umount /Multimedia
+sudo lvremove -y /dev/vg_datos/lv_docker
+sudo lvremove -y /dev/vg_datos/lv_multimedia
+sudo lvremove -y /dev/vg_temp/lv_swap
+sudo vgremove -y vg_datos
+sudo vgremove -y vg_temp
+sudo pvremove /dev/sdc1 /dev/sdb /dev/sdc2
+sudo wipefs -a /dev/sdb
+udo wipefs -a /dev/sdc
+sudo wipefs -a /dev/sdc
+sudo wipefs -a /dev/sdd
+sudo vim /etc/fstab
+fdisk -l
+sudo fdisk -l
+fdisk /dev/sde
+sudo fdisk /dev/sde
+ls -l
+cd RTA_Examen_20250617/
+LS
+ls
+vim Punto_A.sh
+sudo ./Punto_A.sh
+ls -l
+vim Punto_A.sh
+vim Limpiar_Punto_A.sh
+chmod +x limpiar_punto_a.sh
+sudo chmod +x limpiar_punto_a.sh
+chmod +x Limpiar_Punto_A.sh
+sudo ./Limpiar_Punto_A.sh
+sudo ./Punto_A.sh
+vim Punto_A.sh
+sudo ./Limpiar_Punto_A.sh
+sudo ./Punto_A.sh
+sudo pvs
+sudo vgs
+sudo lvs
+mount | grep -E 'docker|Multimedia'
+ls -l
+cd ..
+ls -l
+git add .
+git commit -m "Punto A resuelto: configuración de LVM, particiones y montajes"
+git push origin main
+ls -l
+vim RTA_Examen_20250617/Punto_A.sh
+sudo systemctl restart docker
+tree
+vim belsito_check_URL.sh
+vim Lista_URL.txt
+cat Lista_URL.txt
+vim RTA_Examen_20250617/Punto_B.sh
+cd RTA_Examen_20250617/
+sudo ./Punto_B.sh
+vim Punto_B.sh
+sudo ./Punto_B.sh
+ls -l /temp/head-check/
+sudo ls -l /temp/head-check/
+cat /var/log/status_URL.log
+find /temp/head-check/
+cd ..
+vim belsito_check_URL.sh
+ls -l /usr/local/bin/belsito_check_URL.sh
+cd RTA_Examen_20250617/
+vim Punto_B.sh
+tree /tmp/head-check
+cat /var/log/status_URL.log
+ls -l /tmp/head-check/
+cd ..
+tree
+git add .
+git commit -m "Punto B resuelto: Automatización de chequeo de URLs con bash script" 
+git push
+history
+tree
+cat script_precondiciones.sh
+cd ~/UTN-FRA_SO_Examenes/202408
+ls -l
+cat script_Precondicion.sh
+cd docker/
+ls -l
+cat dockerfile
+cd ..
+cd bash_script/
+ls -l
+cat Lista_URL.txt 
+CD ..
+cd ..
+cat docker-compose.yml
+docker/docker-compose.yml
+sudo docker/docker-compose.yml
+cd docker/
+ls -l
+cat docker-compose.yml 
+cd ..
+tree
+cat checks/check_A.sh
+ls -l
+cat _checks/check_A.sh
+copy docker/ ~/UTNFRA_SO_2do_Parcial_MatiBelsito
+cat docker/web/scripts/get-current-date.js
+cp -r ~/UTN-FRA_SO_Examenes/202408/docker ~/UTNFRA_SO_2do_Parcial_MatiBelsito/
+cd ..
+tree
+cd ..
+ls -l
+cd UTNFRA_SO_2do_Parcial_MatiBelsito/
+ls -l
+tree docker
+vim docker/web/index.html
+lscpu | grep -E 'Model name|CPU MHz'
+vim docker/web/file/info.txt
+cat docker/web/file/info.txt
+cat docker/web/index.html
+ls -l
+tree docker/
+mv docker/dockerfile docker/Dockerfile
+cat docker/Dockerfile
+vim docker/Dockerfile
+cd docker/
+ls -l
+docker build -t web3_2do_parcial_belsito 
+docker build -t web3_2do_parcial_belsito .
+df -h
+sudo vg_datos
+sudo vgs
+sudo lvs
+sudo lvextend -L +1G /dev/vg_datos/lv_docker
+sudo lvextend -l +252 /dev/vg_datos/lv_docker
+sudo resize2fs /dev/vg_datos/lv_docker
+sudo lvs
+docker build -t web3_2do_parcial_belsito .
+docker tag web3_2do_parcial_belsito matibelsito/web3_2do_parcial_belsito:latest
+docker login
+docker push matibelsito/web3_2do_parcial_belsito:latest
+tree
+vim docker-compose.yml
+docker-compose up -d
+docker --version
+docker compose up -d
+docker images
+vim docker-compose.yml
+docker image prune -a
+docker images
+docker build -t matibelsito/web3_2do_parcial_belsito:latest .
+docker push matibelsito/web3_2do_parcial_belsito:latest
+docker compose up -d
+cat docker-compose.yml
+ip a
+history
+cd ..
+tree
+cd RTA_Examen_20250617/
+cat Punto_A.sh
+sudo fdisk -l /dev/sdc
+vim Punto_A.sh
+hostname -I | awk '{print $1}'
+IP_VM=$(ip addr show enp0s8 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1)
+ip addr show enp0s8 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1
+vim Punto_C.sh
+./Punto_C.sh
+vim Punto_C.sh
+cd ..
+tree
+vim docker/docker-compose.yml
+ls ../docker/docker-compose.ym
+sudo ls ../docker/docker-compose.ym
+vim Punto_C.sh
+cd RTA_Examen_20250617/
+vim Punto_C.sh
+./Punto_c.sh
+ls
+./Punto_C.sh
+vim Punto_C.sh
+./Punto_C.sh
+cd ..
+ls -l
+git add .
+git commit -m "Punto C resuelto: Configura docker-compose para levantar contenedor, lista contenedores activos y webs"
+git push
+cd RTA_Examen_20250617/
+vim Punto_C.sh
+ls
+cd ..
+ls
+vim crear_estructura_ansible_simple.sh
+chmod +x crear_estructura_roles.sh
+ls -l
+mv crear_estructura_ansible_simple.sh crear_estructura_ansible.sh
+chmod +x crear_estructura_ansible.sh
+ls -l
+cd RTA_Examen_20250617/
+ls-l
+ls -l
+cd ..
+cat crear_estructura_ansible.sh
+./crear_estructura_roles.sh
+./crear_estructura_ansible.sh
+tree ansible/
+vim ansible/inventory.ini
+ls -l ~/.ssh/id_ed25519
+ssh -i ~/.ssh/id_ed25519 mb@192.168.56.3
+sudo systemctl status ssh
+getent passwd mb
+sudo su -vagrant
+cd ~/UTNFRA_SO_2do_Parcial_MatiBelsito/ansible
+ansible -i inventory.ini servidor -m ping
+ssh-copy-id -i ~/.ssh/id_ed25519.pub mb@192.168.56.3
+ansible -i inventory.ini servidor -m ping
+ls -l
+cd ..
+ls -l
+vim preparar_conexion_ansible.sh
+cat preparar_conexion_ansible.sh
+cd ansible/
+tree
+vim playbook.yml
+vim roles/2do_parcial/tasks/main.yml
+vim roles/Alta_Usuarios_belsito/tasks/main.yml
+vim roles/Sudoers_belsito/tasks/main.yml 
+vim roles/Instala_tools_belsito/tasks/main.yml
+cat roles/Instala_tools_belsito/tasks/main.yml
+cat playbook.yml
+cd ..
+ls -l
+vim ~/UTNFRA_SO_2do_Parcial_MatiBelsito/RTA_Examen_20250617/Punto_D.sh
+cat ansible/inventory.ini
+vim ansible/inventory.ini
+cd RTA_Examen_20250617/
+./Punto_D.sh
+cat /tmp/alumno/datos.txt
+getent passwd Profesor
+getent passwd alumno
+getent group GProfesores
+getent group GAlumnos
+sudo cat /etc/sudoers.d/GProfesores
+which htop
+which tmux
+which tree
+which speedtest
+cd ..
+git add .
+git commit -m "Punto D resuelto: Ansible, ejecucion de roles"
+history
+git commit -m "Punto D resuelto: Ansible, ejecucion de roles"
+git push
+ls -l
+tree
+cat script_precondiciones.sh
+vim script_precondiciones.sh
+cat script_precondiciones.sh
+vim script_precondiciones.sh
+mv script_precondiciones.sh script_precondiciones_belsito.sh
+chmod +x script_precondiciones_belsito.sh
+tree
+vim script_precondiciones_belsito.sh
+vim README.md
+vim Vagrantfile
+vim README.md
+tree
+git status
+git add .
+git commit -m "agrego el Vagrantfile que utilice, actualizo el script de precondiciones para instalar todo el software necesario y actualizo el README.md con una explicacion detallada de como levantar una nueva VM y ejecutar los scripts."
+git push
+cd ..
+ls -ll
+cd UTNFRA_SO_2do_Parcial_MatiBelsito/
+tree
+vim preparar_conexion_ansible.sh
+vim script_precondiciones_belsito.sh
+cat script_precondiciones_belsito.sh
+vim script_precondiciones_belsito.sh
+fdisk -l
+sudo fdisk -l
+sudo pvs
+sudo vgs
+sudo lvs
+cd RTA_Examen_20250617/
+vim Punto_A.sh
+cat Punto_A.sh
+sudo cat /var/log/status_URL.log
+sudo find /tmp/head-check -type f -name "*.log"
+tree /tmp/head-check
+history -a
+cd ..
+tree

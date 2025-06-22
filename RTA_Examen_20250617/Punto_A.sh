@@ -59,9 +59,8 @@ sudo pvcreate /dev/sdc2 /dev/sdd1 /dev/sde1
 sudo vgcreate vg_datos /dev/sdc2
 sudo vgcreate vg_temp /dev/sdd1 /dev/sde1
 
-# Crear LVs
-#sudo lvcreate -L 10M -n lv_docker vg_datos
-sudo lvcreate -L 1G -n lv_docker vg_datos
+# Crear LVs con tamaños corregidos
+sudo lvcreate -L 1020M -n lv_docker vg_datos
 sudo lvcreate -L 1.5G -n lv_multimedia vg_datos
 sudo lvcreate -L 1.9G -n lv_swap vg_temp
 
@@ -80,7 +79,6 @@ sudo mkdir -p /Multimedia
 # Montar LVs
 sudo mount /dev/vg_datos/lv_docker /var/lib/docker
 sudo mount /dev/vg_datos/lv_multimedia /Multimedia
-
 
 # Activar swap
 sudo swapon /dev/sdc1
@@ -106,11 +104,9 @@ if ! grep -q "lv_swap" /etc/fstab; then
     echo "/dev/mapper/vg_temp-lv_swap none swap sw 0 0" | sudo tee -a /etc/fstab
 fi
 
-
 # Reiniciar Docker para que use el nuevo almacenamiento
 echo "[*] Reiniciando Docker..."
 sudo systemctl restart docker
 
-
-
 echo "[*] Punto A completado con éxito."
+
