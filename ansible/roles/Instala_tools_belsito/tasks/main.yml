@@ -1,9 +1,8 @@
 - name: Instalar herramientas requeridas
-  apt:
+  package:
     name:
       - htop
       - tmux
       - tree
       - speedtest-cli
     state: present
-    update_cache: yes

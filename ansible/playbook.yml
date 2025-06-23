@@ -1,8 +1,13 @@
-- name: Ejecutar todos los roles del Punto D
+- name: Ejecutar tareas sin privilegios
+  hosts: servidor
+  roles:
+    - 2do_parcial
+
+- name: Ejecutar tareas con privilegios root
   hosts: servidor
   become: yes
   roles:
-    - 2do_parcial
     - Alta_Usuarios_belsito
     - Sudoers_belsito
     - Instala_tools_belsito
+
