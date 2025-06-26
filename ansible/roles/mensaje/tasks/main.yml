@@ -1,0 +1,7 @@
+- name: Mostrar mensaje desde un rol
+  debug:
+    msg: "Hola, este mensaje se escribio en un rol que estoy ejecutando desde un playbook"
+
+
+
+

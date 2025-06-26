@@ -1,4 +1,5 @@
 - name: Instalar herramientas requeridas
+  become: yes
   package:
     name:
       - htop
@@ -6,3 +7,5 @@
       - tree
       - speedtest-cli
     state: present
+    
+

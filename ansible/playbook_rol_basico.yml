@@ -1,0 +1,5 @@
+- name: Playbook que ejecuta el rol
+  hosts: localhost
+  roles:
+    - mensaje
+

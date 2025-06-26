@@ -1,0 +1,8 @@
+- name: Mi primer playbook
+  hosts: servidor
+  tasks:
+    - name: Mostrar mensaje
+      debug:
+        msg: "Hola, estoy dentro de un playbook"
+
+

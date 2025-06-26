@@ -1,13 +1,16 @@
-- name: Ejecutar tareas sin privilegios
-  hosts: servidor
-  roles:
-    - 2do_parcial
 
-- name: Ejecutar tareas con privilegios root
-  hosts: servidor
-  become: yes
-  roles:
-    - Alta_Usuarios_belsito
-    - Sudoers_belsito
-    - Instala_tools_belsito
+- hosts: all
 
+  tasks:
+    - include_role:
+        name: 2do_parcial
+    - include_role:
+        name: Alta_Usuarios_belsito
+    - include_role:
+        name: Sudoers_belsito
+    - include_role:
+        name: Instala_tools_belsito
+    
+    - name: "Otra tarea"
+      debug:
+        msg: "Me estoy ejecutando despues de los Roles"

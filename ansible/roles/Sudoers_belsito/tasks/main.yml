@@ -1,7 +1,10 @@
 - name: Dar permisos sudo sin contraseña al grupo GProfesores
+  become: yes
   copy:
     dest: /etc/sudoers.d/GProfesores
     content: "%GProfesores ALL=(ALL) NOPASSWD: ALL\n"
     owner: root
     group: root
     mode: '0440'
+    
+

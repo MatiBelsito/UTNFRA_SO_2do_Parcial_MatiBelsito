@@ -5,6 +5,7 @@
     mode: '0755'
 
 - name: Crear archivo datos.txt con información del sistema
+  become: yes
   copy:
     dest: /tmp/alumno/datos.txt
     content: |
